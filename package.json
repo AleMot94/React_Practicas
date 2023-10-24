@@ -1,0 +1,19 @@
+{
+  "name": "react-practicas",
+  "version": "1.0.0",
+  "description": "preacticas con react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleMot94/React_Practicas.git"
+  },
+  "author": "motrel alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleMot94/React_Practicas/issues"
+  },
+  "homepage": "https://github.com/AleMot94/React_Practicas#readme"
+}
