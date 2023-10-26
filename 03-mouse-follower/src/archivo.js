@@ -1,0 +1,1 @@
+const = { algo: 2, otra:34 }
