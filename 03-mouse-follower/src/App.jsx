@@ -19,9 +19,13 @@ const FollowMouse = () => {
     // se usa para limpiar los efectos del render anterior, en general suscripciones a eventos
     // si no se limpia, al volver a renderizar crea nuevas suscripciones, consumiendo todos los recursos
     return () => {
+      // cleanup method
       // Función de limpieza para eliminar el event listener
       window.removeEventListener("pointermove", handleMove);
     };
+    // [] --> solo se ejecuta la primera vez montado
+    // [enable] --> cada ves que cambia la dependencia
+    // undefined --> cada vez que se renderiza
   }, [enable]); // despendencias que escucha el useEffect para volver a renderizar
   // con getEventListener(window) podes ver todos los eventos suscriptos que hay, en la consola del navegador (solo en chrome)
 

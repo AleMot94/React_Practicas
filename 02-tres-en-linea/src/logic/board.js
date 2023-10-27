@@ -12,7 +12,6 @@ export const checkWinner = (boardToCheck) => {
       boardToCheck[a] == boardToCheck[c]
       // SI LOS 3 VALORES SON IGUALES ES VERDADERO
     ) {
-      console.log(boardToCheck[a]);
       return boardToCheck[a]; // retorna X u O -> el ganador
     }
   }
