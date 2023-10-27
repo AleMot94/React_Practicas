@@ -1,5 +1,6 @@
-// funcion original, no se puedes pasar es setFact como parametro
+// funcion original, no se puede pasar el setFact como parametro
 // los estados de useState se tienen que quedar en el componente donde se crearon
+// para eso se pueden usar los custom-hook
 
 /*   const getRamdonFact = () => {
     fetch(CAT_ENDPOINT_RAMDON_FACT)
