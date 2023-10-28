@@ -1,7 +1,11 @@
 import responseMovies from "../mooks/with-results.json";
+import noResponseMovies from "../mooks/no-results.json";
+import { useState } from "react";
 
-export function useMovies() {
-  const movies = responseMovies.Search;
+export function useMovies({ query }) {
+  const [respMovies, setRespMovies] = useState({ Search: [] });
+
+  const movies = respMovies?.Search;
 
   const mappedMovies = movies.map((movie) => ({
     id: movie.imdbID,
@@ -11,5 +15,13 @@ export function useMovies() {
     img: movie.Poster,
   }));
 
-  return { movies: mappedMovies };
+  const getMovies = () => {
+    if (query) {
+      setRespMovies(responseMovies);
+    } else {
+      setRespMovies({ Search: [] });
+    }
+  };
+
+  return { movies: mappedMovies, getMovies };
 }

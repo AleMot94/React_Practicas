@@ -1,0 +1,28 @@
+/* GRID RESPOSIVE, ESTA FORMA ES GENIAL */
+
+.movies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie h3 {
+  margin: 0;
+  height: 70px;
+}
+
+.movie p {
+  margin: 0;
+}
+
+.movie img {
+  border-radius: 8px;
+}
